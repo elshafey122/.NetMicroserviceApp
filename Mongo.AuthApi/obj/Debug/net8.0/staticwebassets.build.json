@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AyEEjLiWqeoMfFUGycQCmoOHmp3kXSrNp9zlLsgW54Q=",
+  "Source": "Mongo.AuthApi",
+  "BasePath": "_content/Mongo.AuthApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

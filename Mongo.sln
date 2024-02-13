@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{E373C550-8F1E-4D80-8319-9957F054079B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{24649B2B-2813-46B7-8E70-CFE59402296B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{B7EDB8C8-64EE-4882-85E7-C7C248E6DA7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{BF92575E-4F83-4827-8238-591EFAE6BC0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.AuthApi", "Mongo.AuthApi\Mongo.AuthApi.csproj", "{84D07ED2-6AD6-47E8-B9EC-1233930B6ACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.CouponApi", "Mongo.CouponApi\Mongo.CouponApi.csproj", "{E34C7E6C-866B-4701-B861-F088A8386349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.ProductApi", "Mongo.ProductApi\Mongo.ProductApi.csproj", "{59C76FDC-E7E2-4534-8005-0A084E2D8E1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.ShoppingCartApi", "Mongo.ShoppingCartApi\Mongo.ShoppingCartApi.csproj", "{3A558B0E-CC74-43FD-9CA7-2161E00E251B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.Web", "Mongo.Web\Mongo.Web.csproj", "{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84D07ED2-6AD6-47E8-B9EC-1233930B6ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D07ED2-6AD6-47E8-B9EC-1233930B6ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D07ED2-6AD6-47E8-B9EC-1233930B6ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D07ED2-6AD6-47E8-B9EC-1233930B6ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E34C7E6C-866B-4701-B861-F088A8386349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34C7E6C-866B-4701-B861-F088A8386349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34C7E6C-866B-4701-B861-F088A8386349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34C7E6C-866B-4701-B861-F088A8386349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C76FDC-E7E2-4534-8005-0A084E2D8E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C76FDC-E7E2-4534-8005-0A084E2D8E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C76FDC-E7E2-4534-8005-0A084E2D8E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C76FDC-E7E2-4534-8005-0A084E2D8E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A558B0E-CC74-43FD-9CA7-2161E00E251B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A558B0E-CC74-43FD-9CA7-2161E00E251B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A558B0E-CC74-43FD-9CA7-2161E00E251B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A558B0E-CC74-43FD-9CA7-2161E00E251B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84D07ED2-6AD6-47E8-B9EC-1233930B6ACB} = {24649B2B-2813-46B7-8E70-CFE59402296B}
+		{E34C7E6C-866B-4701-B861-F088A8386349} = {24649B2B-2813-46B7-8E70-CFE59402296B}
+		{59C76FDC-E7E2-4534-8005-0A084E2D8E1A} = {24649B2B-2813-46B7-8E70-CFE59402296B}
+		{3A558B0E-CC74-43FD-9CA7-2161E00E251B} = {24649B2B-2813-46B7-8E70-CFE59402296B}
+		{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F} = {E373C550-8F1E-4D80-8319-9957F054079B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B8AF6DD-20C8-42B7-B2CE-20357C1A8AE1}
+	EndGlobalSection
+EndGlobal

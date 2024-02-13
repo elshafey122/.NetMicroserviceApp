@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "STUsIGycMeH6PBdS8FGGvjR5CMN99rWaXv/lkiLsCRc=",
+  "Source": "Mongo.ShoppingCartApi",
+  "BasePath": "_content/Mongo.ShoppingCartApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
