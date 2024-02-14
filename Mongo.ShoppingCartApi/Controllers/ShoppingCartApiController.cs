@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Mongo.ProductApi.Services.Interfaces;
 using Mongo.ShoppingCartApi.Model.Dto;
@@ -7,6 +8,7 @@ namespace Mongo.ShoppingCartApi.Controllers
 {
     [Route("api/ShoppingCart")]
     [ApiController]
+    [Authorize]
     public class ShoppingCartApiController : ControllerBase
     {
         private readonly IMapper _mapper;
@@ -24,7 +26,7 @@ namespace Mongo.ShoppingCartApi.Controllers
             return Ok(result);
         }
 
-        [HttpPost("RemoveCart/{cartDetailsId}")]
+        [HttpPut("RemoveCart/{cartDetailsId}")]
         public async Task<IActionResult> RemoveCart(int cartDetailsId)
         {
             var result = await _shoppingCartRepository.RemoveCart(cartDetailsId);

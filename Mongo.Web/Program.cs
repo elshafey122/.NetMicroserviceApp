@@ -25,7 +25,7 @@ namespace Mongo.Web
             builder.Services.AddScoped<IAuthRestService, AuthRestService>();
             builder.Services.AddScoped<ITokenProvider, TokenProvider>();
             builder.Services.AddScoped<IPrductRestService, PrductRestService>();
-            builder.Services.AddScoped<IcartService, cartService>();
+            builder.Services.AddScoped<ICartService, CartService>();
 
 
             #region  auth and authori using cookie

@@ -3,11 +3,11 @@ using Mongo.Web.Model;
 
 namespace Mongo.Web.Services.Interfaces
 {
-    public interface IcartService
+    public interface ICartService
     {
-        Task<ResponseDto> UpsertCartAsync(CartDto cartDto);
-        Task<ResponseDto> RemoveFromCartAsync(int cartdetailsId);
-        Task<ResponseDto> GetCartByUserIdAsync(int userId);
-        Task<ResponseDto> ApplyCouponAsync(CartDto cartDto);
+        Task<ResponseDto> GetCartByUserIdAsync(string url, bool withbearer = true);
+        Task<ResponseDto> UpsertCartAsync(string url, CartDto cartDto, bool withbearer = true);
+        Task<ResponseDto> RemoveFromCartAsync(string url , bool withbearer = true);
+        public Task<ResponseDto> ApplyCouponAsync(string url, CartDto cartDto,bool withbearer = true);
     }
 }

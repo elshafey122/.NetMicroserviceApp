@@ -145,3 +145,4 @@ G:\courses\back\Microservices\Final\Mongo\Mongo.ProductApi\obj\Debug\net8.0\refi
 G:\courses\back\Microservices\Final\Mongo\Mongo.ProductApi\obj\Debug\net8.0\Mongo.ProductApi.pdb
 G:\courses\back\Microservices\Final\Mongo\Mongo.ProductApi\obj\Debug\net8.0\Mongo.ProductApi.genruntimeconfig.cache
 G:\courses\back\Microservices\Final\Mongo\Mongo.ProductApi\obj\Debug\net8.0\ref\Mongo.ProductApi.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.ProductApi\obj\Debug\net8.0\Mongo.ProductApi.sourcelink.json

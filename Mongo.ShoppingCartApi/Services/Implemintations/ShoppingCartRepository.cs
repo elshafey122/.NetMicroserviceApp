@@ -71,24 +71,24 @@ namespace Mongo.ProductApi.Services.Implemintations
                     item.product = productDtos.FirstOrDefault(x => x.ProductId == item.productId);
                     cartDto.cartHeader.CartTotal += item.Count * item.product.Price;
                 }
-                if(!string.IsNullOrEmpty(cartDto.cartHeader.CouponCode))
+                if (!string.IsNullOrEmpty(cartDto.cartHeader.CouponCode))
                 {
                     CouponDto couponDto = await _restRepository.GetCouponAsync(cartDto.cartHeader.CouponCode);
-                    if(couponDto!=null && cartDto.cartHeader.CartTotal> couponDto.MinAmount)
+                    if (couponDto != null && cartDto.cartHeader.CartTotal > couponDto.MinAmount)
                     {
                         cartDto.cartHeader.CartTotal -= couponDto.DiscountAmount;
                         cartDto.cartHeader.Discount = couponDto.DiscountAmount;
                     }
                 }
                 _responseDto.Data = cartDto;
-
+                return _responseDto;
             }
             catch (Exception ex)
             {
                 _responseDto.IsSucceeded = false;
                 _responseDto.Message = ex.Message;
+                return _responseDto;
             }
-            return _responseDto;
         }
 
         public async Task<ResponseDto> RemoveCart(int cartdetailsId)
@@ -157,6 +157,7 @@ namespace Mongo.ProductApi.Services.Implemintations
                     }
                 }
                 _responseDto.Data = cartDto;
+
             }
             catch (Exception ex)
             {

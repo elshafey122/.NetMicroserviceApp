@@ -2,7 +2,7 @@
 
 namespace Mongo.Web.Services.Interfaces
 {
-    public interface IPrductRestService:IRestService<Product>
+    public interface IPrductRestService:IRestService<ProductDto>
     {
 
     }

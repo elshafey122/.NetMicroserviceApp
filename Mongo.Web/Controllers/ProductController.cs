@@ -16,25 +16,25 @@ namespace Mongo.Web.Controllers
 
         public async Task<IActionResult> ProductIndex()
         {
-            List<Product> products = new();
+            List<ProductDto> products = new();
             var result = await _productRestService.GetAsync($"{SD.ProductApi}/GetAll", true);
             if (!result.IsSucceeded)
             {
                 TempData["error"] = result.Message;
                 return RedirectToAction("Index","Home");
             }
-            products = JsonConvert.DeserializeObject<List<Product>>(Convert.ToString(result.Data));
+            products = JsonConvert.DeserializeObject<List<ProductDto>>(Convert.ToString(result.Data));
             return View(products);
         }
 
         public async Task<IActionResult> ProductCreate()
         {
-            Product productdto = new();
+            ProductDto productdto = new();
 			return View("ProductForm",productdto);
         }
 
         [HttpPost]
-        public async Task<IActionResult> ProductCreate(Product newproduct)
+        public async Task<IActionResult> ProductCreate(ProductDto newproduct)
         {
 			if (ModelState.IsValid)
             {
@@ -59,14 +59,14 @@ namespace Mongo.Web.Controllers
                 TempData["error"] = result.Message;
                 return RedirectToAction("Index", "Home");
             }
-            var product = JsonConvert.DeserializeObject<Product>(Convert.ToString(result.Data));
+            var product = JsonConvert.DeserializeObject<ProductDto>(Convert.ToString(result.Data));
             product.ProductId = productId;
             return View("ProductForm", product);
         }
 
 
         [HttpPost]
-		public async Task<IActionResult> ProductUpdate(Product newproduct)
+		public async Task<IActionResult> ProductUpdate(ProductDto newproduct)
 		{
 			if (ModelState.IsValid)
 			{

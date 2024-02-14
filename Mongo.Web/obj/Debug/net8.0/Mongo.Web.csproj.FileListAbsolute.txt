@@ -40,3 +40,4 @@ G:\courses\back\Microservices\Final\Mongo\Mongo.Web\obj\Debug\net8.0\refint\Mong
 G:\courses\back\Microservices\Final\Mongo\Mongo.Web\obj\Debug\net8.0\Mongo.Web.pdb
 G:\courses\back\Microservices\Final\Mongo\Mongo.Web\obj\Debug\net8.0\Mongo.Web.genruntimeconfig.cache
 G:\courses\back\Microservices\Final\Mongo\Mongo.Web\obj\Debug\net8.0\ref\Mongo.Web.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.Web\obj\Debug\net8.0\Mongo.Web.sourcelink.json
