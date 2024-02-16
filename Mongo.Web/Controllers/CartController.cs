@@ -45,7 +45,7 @@ namespace Mongo.Web.Controllers
             }
             return View();
         }
-        
+        [HttpPost]
         public async Task<IActionResult> ApplyCoupon(CartDto cardDto)
         {
             var response = await _cartService.ApplyCouponAsync($"{SD.ShoppingCartApi}/ApplyCoupon",cardDto,true);
@@ -66,5 +66,30 @@ namespace Mongo.Web.Controllers
             }
             return View();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> EmailCart(CartDto cardDto)
+        {
+            var cartDto = new CartDto();
+            var userId = User.Claims.Where(x => x.Type == JwtRegisteredClaimNames.Sub).FirstOrDefault().Value;
+            var result = await _cartService.GetCartByUserIdAsync($"{SD.ShoppingCartApi}/GetCart/{userId}", true);
+            if (result.IsSucceeded = false)
+            {
+                TempData["error"] = result.Message;
+                return View(new CartDto());
+            }
+            cartDto = JsonConvert.DeserializeObject<CartDto>(Convert.ToString(result.Data));
+
+
+            cartDto.cartHeader.Email=User.Claims.Where(x=>x.Type == JwtRegisteredClaimNames.Email)?.FirstOrDefault()?.Value;
+            var response = await _cartService.EmailCart($"{SD.ShoppingCartApi}/EmailCartRequest", cartDto, true);
+            if (response.IsSucceeded)
+            {
+                TempData["success"] = "email will be processed and send shortly";
+                return RedirectToAction(nameof(CartIndex));
+            }
+            return View(nameof(CartIndex));
+        }
+
     }
 }

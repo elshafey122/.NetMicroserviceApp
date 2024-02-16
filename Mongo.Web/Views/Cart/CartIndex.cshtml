@@ -4,7 +4,7 @@
 @if (Model.cartHeader != null && Model.cartDetails?.Count() > 0)
 {
 
-    <form method="post">
+    <form method="post" asp-action="EmailCart">
         <br />
         <input type="hidden" asp-for="@Model.cartHeader.CartHeaderId" />
         <input type="hidden" asp-for="@Model.cartHeader.UserId" />

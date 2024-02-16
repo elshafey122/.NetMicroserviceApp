@@ -146,3 +146,5 @@ G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\obj\Debug\net8.0
 G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\obj\Debug\net8.0\Mongo.ShoppingCartApi.genruntimeconfig.cache
 G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\obj\Debug\net8.0\ref\Mongo.ShoppingCartApi.dll
 G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\obj\Debug\net8.0\Mongo.ShoppingCartApi.sourcelink.json
+G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\bin\Debug\net8.0\Mongo.MessageBus.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\bin\Debug\net8.0\Mongo.MessageBus.pdb

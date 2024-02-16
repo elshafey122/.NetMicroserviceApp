@@ -18,7 +18,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.1",
           "Newtonsoft.Json": "13.0.3",
           "RestSharp": "110.2.1-alpha.0.16",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "Mongo.MessageBus": "1.0.0.0"
         },
         "runtime": {
           "Mongo.ShoppingCartApi.dll": {}
@@ -1000,6 +1001,14 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "Mongo.MessageBus/1.0.0.0": {
+        "runtime": {
+          "Mongo.MessageBus.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1617,6 +1626,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Mongo.MessageBus/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

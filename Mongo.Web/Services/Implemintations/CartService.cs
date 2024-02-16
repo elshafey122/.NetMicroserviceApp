@@ -39,6 +39,25 @@ namespace Mongo.Web.Services.Implemintations
 
         }
 
+        public async Task<ResponseDto> EmailCart(string url , CartDto cartDto , bool withbearer = true)
+        {
+            var request = new RestRequest(url, Method.Post);
+            request.AddJsonBody(cartDto);
+            request.AddHeader("Accept", "application/json"); 
+            if (withbearer)
+            {
+                request.AddHeader("Authorization", $"Bearer {_tokenProvider.GetToken()}");// add token in request
+            }
+            var result = await _restClient.ExecuteAsync(request); 
+            ResponseDto responseDto = JsonConvert.DeserializeObject<ResponseDto>(result.Content);
+            if (responseDto.IsSucceeded == false)
+            {
+                _response.IsSucceeded = false;
+                _response.Message = result.StatusCode.ToString();
+            }
+            return _response;
+        }
+
         public async Task<ResponseDto> GetCartByUserIdAsync(string url, bool withbearer = true)
         {
             var request = new RestRequest(url,Method.Get);
@@ -89,5 +108,5 @@ namespace Mongo.Web.Services.Implemintations
             }
             return _response;
         }
-    }//https://localhost:7003/api/ShoppingCart/CartUpsert
+    }
 }

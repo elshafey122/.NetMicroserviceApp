@@ -10,7 +10,6 @@ namespace Mongo.ProductApi.Services.Interfaces
         Task<ResponseDto> GetCart(string userId);
         Task<ResponseDto> ApplyCoupon(CartDto cartDto);
         Task<ResponseDto> RemoveCoupon(CartDto cartDto);
-
-
+        Task<ResponseDto> EmailCartRequest(CartDto cartDto , string messageName);
     }
 }

@@ -13,10 +13,12 @@ namespace Mongo.ShoppingCartApi.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IShoppingCartRepository _shoppingCartRepository;
-        public ShoppingCartApiController(IMapper mapper, IShoppingCartRepository shoppingCartRepository )
+        private readonly IConfiguration _configuration;
+        public ShoppingCartApiController(IMapper mapper, IShoppingCartRepository shoppingCartRepository, IConfiguration configuration)
         {
             _mapper = mapper;
             _shoppingCartRepository = shoppingCartRepository;
+            _configuration = configuration;
         }
 
         [HttpPost("CartUpsert")]
@@ -51,6 +53,14 @@ namespace Mongo.ShoppingCartApi.Controllers
         public async Task<IActionResult> RemoveCoupon([FromBody] CartDto cardDto)
         {
             var result = await _shoppingCartRepository.RemoveCoupon(cardDto);
+            return Ok(result);
+        }
+
+        [HttpPost("EmailCartRequest")]
+        public async Task<IActionResult> EmailCartRequest([FromBody] CartDto cardDto)
+        {
+            string messageName = _configuration.GetValue<string>("TopicAndQueueNames:EmailShoppingCart");
+            var result = await _shoppingCartRepository.EmailCartRequest(cardDto,messageName);
             return Ok(result);
         }
     }

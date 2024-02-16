@@ -1,0 +1,13 @@
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\bin\Debug\net8.0\Mongo.MessageBus.deps.json
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\bin\Debug\net8.0\Mongo.MessageBus.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\bin\Debug\net8.0\Mongo.MessageBus.pdb
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\Mongo.MessageBus.csproj.AssemblyReference.cache
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\Mongo.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\Mongo.MessageBus.AssemblyInfoInputs.cache
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\Mongo.MessageBus.AssemblyInfo.cs
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\Mongo.MessageBus.csproj.CoreCompileInputs.cache
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\Mongo.MessageBus.sourcelink.json
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\Mongo.MessageBus.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\refint\Mongo.MessageBus.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\Mongo.MessageBus.pdb
+G:\courses\back\Microservices\Final\Mongo\Mongo.MessageBus\obj\Debug\net8.0\ref\Mongo.MessageBus.dll

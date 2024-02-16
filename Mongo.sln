@@ -11,15 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{B7ED
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{BF92575E-4F83-4827-8238-591EFAE6BC0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.AuthApi", "Mongo.AuthApi\Mongo.AuthApi.csproj", "{84D07ED2-6AD6-47E8-B9EC-1233930B6ACB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mongo.AuthApi", "Mongo.AuthApi\Mongo.AuthApi.csproj", "{84D07ED2-6AD6-47E8-B9EC-1233930B6ACB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.CouponApi", "Mongo.CouponApi\Mongo.CouponApi.csproj", "{E34C7E6C-866B-4701-B861-F088A8386349}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mongo.CouponApi", "Mongo.CouponApi\Mongo.CouponApi.csproj", "{E34C7E6C-866B-4701-B861-F088A8386349}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.ProductApi", "Mongo.ProductApi\Mongo.ProductApi.csproj", "{59C76FDC-E7E2-4534-8005-0A084E2D8E1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mongo.ProductApi", "Mongo.ProductApi\Mongo.ProductApi.csproj", "{59C76FDC-E7E2-4534-8005-0A084E2D8E1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.ShoppingCartApi", "Mongo.ShoppingCartApi\Mongo.ShoppingCartApi.csproj", "{3A558B0E-CC74-43FD-9CA7-2161E00E251B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mongo.ShoppingCartApi", "Mongo.ShoppingCartApi\Mongo.ShoppingCartApi.csproj", "{3A558B0E-CC74-43FD-9CA7-2161E00E251B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.Web", "Mongo.Web\Mongo.Web.csproj", "{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mongo.Web", "Mongo.Web\Mongo.Web.csproj", "{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.MessageBus", "Mongo.MessageBus\Mongo.MessageBus.csproj", "{5C3E8725-AB71-45F6-83AD-FC56EE5804F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo.EmailApi", "Mongo.EmailApi\Mongo.EmailApi.csproj", "{3F677E6C-B2B6-43E6-8461-3BCEC7F6C0FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,14 @@ Global
 		{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C3E8725-AB71-45F6-83AD-FC56EE5804F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C3E8725-AB71-45F6-83AD-FC56EE5804F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C3E8725-AB71-45F6-83AD-FC56EE5804F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C3E8725-AB71-45F6-83AD-FC56EE5804F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F677E6C-B2B6-43E6-8461-3BCEC7F6C0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F677E6C-B2B6-43E6-8461-3BCEC7F6C0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F677E6C-B2B6-43E6-8461-3BCEC7F6C0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F677E6C-B2B6-43E6-8461-3BCEC7F6C0FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +69,8 @@ Global
 		{59C76FDC-E7E2-4534-8005-0A084E2D8E1A} = {24649B2B-2813-46B7-8E70-CFE59402296B}
 		{3A558B0E-CC74-43FD-9CA7-2161E00E251B} = {24649B2B-2813-46B7-8E70-CFE59402296B}
 		{2F9DEC92-7ABF-4C2D-911C-4F06167A6F5F} = {E373C550-8F1E-4D80-8319-9957F054079B}
+		{5C3E8725-AB71-45F6-83AD-FC56EE5804F6} = {B7EDB8C8-64EE-4882-85E7-C7C248E6DA7B}
+		{3F677E6C-B2B6-43E6-8461-3BCEC7F6C0FF} = {24649B2B-2813-46B7-8E70-CFE59402296B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B8AF6DD-20C8-42B7-B2CE-20357C1A8AE1}

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Mongo.MessageBus;
 using Mongo.ProductApi.Services.Interfaces;
 using Mongo.ShoppingCartApi.Data;
 using Mongo.ShoppingCartApi.Model;
@@ -15,12 +16,14 @@ namespace Mongo.ProductApi.Services.Implemintations
         private readonly IMapper _mapper;
         private readonly ResponseDto _responseDto;
         private readonly IRestRepository _restRepository;
-        public ShoppingCartRepository(ApplicationDbContext context, IMapper mapper, IRestRepository restRepository)
+        private readonly IMessageBus _messageBus;
+        public ShoppingCartRepository(ApplicationDbContext context, IMapper mapper, IRestRepository restRepository , IMessageBus messageBus)
         {
             _mapper = mapper;
             _context = context;
             _responseDto = new ResponseDto();
             _restRepository = restRepository;
+            _messageBus = messageBus;
         }
 
         public async Task<ResponseDto> ApplyCoupon(CartDto cartDto)
@@ -166,5 +169,22 @@ namespace Mongo.ProductApi.Services.Implemintations
             }
             return _responseDto;
         }
+
+        public async Task<ResponseDto> EmailCartRequest(CartDto cartDto , string name)
+        {
+            try
+            {
+                await _messageBus.PublishMessage(cartDto, name);
+                _responseDto.IsSucceeded = true;
+            }
+            catch(Exception ex)
+            {
+                _responseDto.Message = ex.Message;
+                _responseDto.IsSucceeded = false;
+            }
+            return _responseDto;
+        }
     }
+
+
 }

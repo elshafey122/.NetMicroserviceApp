@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Mongo.MessageBus;
 using Mongo.ShoppingCartApi;
 using Mongo.ShoppingCartApi.Data;
 using Mongo.ShoppingCartApi.Extentions;
@@ -31,6 +32,7 @@ namespace Mongo.ProductApi
 
             builder.Services.AddScoped<Services.Interfaces.IShoppingCartRepository, Services.Implemintations.ShoppingCartRepository>();
             builder.Services.AddScoped<IRestRepository, RestRepository>();
+            builder.Services.AddScoped<IMessageBus, MessagesBus>();
             builder.Services.AddAutoMapper(typeof(MappingConfig));
 
             #region swagger generator for authorization
