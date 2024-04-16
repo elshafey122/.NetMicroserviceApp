@@ -1,4 +1,4 @@
-## This GitHub repository hosts a microservices-based application developed using .NET Core 8 with multiple apis and mvc It encompasses a range of APIs and MVC components that collectively deliver the application's functionalities
+## This repository hosts a microservices-based application developed using .NET Core 8 with multiple apis and mvc . It encompasses a range of APIs and MVC components that collectively deliver the application's functionalities.
 - API Gateway (Ocelot): It serves as a reverse proxy and API gateway, managing incoming client requests and directing them to the relevant microservices.
 - Azure Service Bus (Queue, Topic, and Subscription): This Azure service acts as a message broker, facilitating asynchronous communication among the microservices.
 - Auth API Service: This service is dedicated to handling user authentication and authorization processes.
