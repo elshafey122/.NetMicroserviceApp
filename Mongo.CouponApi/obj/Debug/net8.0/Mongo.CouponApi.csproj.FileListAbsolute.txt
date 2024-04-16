@@ -145,3 +145,4 @@ G:\courses\back\Microservices\Final\Mongo\Mongo.CouponApi\obj\Debug\net8.0\refin
 G:\courses\back\Microservices\Final\Mongo\Mongo.CouponApi\obj\Debug\net8.0\Mongo.CouponApi.pdb
 G:\courses\back\Microservices\Final\Mongo\Mongo.CouponApi\obj\Debug\net8.0\Mongo.CouponApi.genruntimeconfig.cache
 G:\courses\back\Microservices\Final\Mongo\Mongo.CouponApi\obj\Debug\net8.0\ref\Mongo.CouponApi.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.CouponApi\obj\Debug\net8.0\Mongo.CouponApi.sourcelink.json

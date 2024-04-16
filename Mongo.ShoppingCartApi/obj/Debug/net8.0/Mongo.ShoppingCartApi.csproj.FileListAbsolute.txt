@@ -148,3 +148,6 @@ G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\obj\Debug\net8.0
 G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\obj\Debug\net8.0\Mongo.ShoppingCartApi.sourcelink.json
 G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\bin\Debug\net8.0\Mongo.MessageBus.dll
 G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\bin\Debug\net8.0\Mongo.MessageBus.pdb
+G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\bin\Debug\net8.0\Azure.Core.Amqp.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.ShoppingCartApi\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll

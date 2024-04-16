@@ -145,3 +145,4 @@ G:\courses\back\Microservices\Final\Mongo\Mongo.AuthApi\obj\Debug\net8.0\refint\
 G:\courses\back\Microservices\Final\Mongo\Mongo.AuthApi\obj\Debug\net8.0\Mongo.AuthApi.pdb
 G:\courses\back\Microservices\Final\Mongo\Mongo.AuthApi\obj\Debug\net8.0\Mongo.AuthApi.genruntimeconfig.cache
 G:\courses\back\Microservices\Final\Mongo\Mongo.AuthApi\obj\Debug\net8.0\ref\Mongo.AuthApi.dll
+G:\courses\back\Microservices\Final\Mongo\Mongo.AuthApi\obj\Debug\net8.0\Mongo.AuthApi.sourcelink.json

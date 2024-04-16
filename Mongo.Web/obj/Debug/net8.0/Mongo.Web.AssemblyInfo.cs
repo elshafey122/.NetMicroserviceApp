@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mongo.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b3daa136b28beccae103a21d467ea6f34f48a46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b61e07d0778351aa9cb56337eeab8c68632bf94")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mongo.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mongo.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

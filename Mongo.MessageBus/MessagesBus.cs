@@ -11,7 +11,7 @@ namespace Mongo.MessageBus
 {
     public class MessagesBus : IMessageBus
     {
-        private string connectionString = "Endpoint=sb://mangoweb.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=HjoslS58pPHtAULb0tay/jx4Ys0+MO5/R+ASbCcFTG0=";
+        private string connectionString = "myazureconnection";
         public async Task PublishMessage(object message, string Topic_Queue_Name)
         {
 

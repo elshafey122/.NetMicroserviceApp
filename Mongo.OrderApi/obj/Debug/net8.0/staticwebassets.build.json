@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FC2eCxxz95NnGtcS7Sn9j2tT14VXBK5XyMBZokkI2s4=",
+  "Source": "Mongo.OrderApi",
+  "BasePath": "_content/Mongo.OrderApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

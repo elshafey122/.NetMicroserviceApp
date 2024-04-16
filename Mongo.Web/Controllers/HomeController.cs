@@ -15,8 +15,8 @@ namespace Mongo.Web.Controllers
     public class HomeController : Controller
     {
         private readonly IPrductRestService _productRestService;
-        private readonly ICartService _cartService;
-        public HomeController(IPrductRestService prductRestService, ICartService cartService)
+        private readonly ICartRestService _cartService;
+        public HomeController(IPrductRestService prductRestService, ICartRestService cartService)
         {
             _productRestService = prductRestService;
             _cartService = cartService;

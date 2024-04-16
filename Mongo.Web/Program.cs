@@ -16,21 +16,24 @@ namespace Mongo.Web
 
 
             SD.CouponApi = builder.Configuration["ServiceUrls:CouponApi"];
-            SD.AuthApi = builder.Configuration["ServiceUrls:AuthApi"];
+            SD.AuthApi = builder.Configuration["ServiceUrls:AuthApi"]; 
             SD.ProductApi = builder.Configuration["ServiceUrls:ProductApi"];
             SD.ShoppingCartApi = builder.Configuration["ServiceUrls:ShoppingCartApi"];
+            SD.OrderApi = builder.Configuration["ServiceUrls:OrderApi"];
 
 
             builder.Services.AddScoped<ICouponRestService, CouponRestService>();
             builder.Services.AddScoped<IAuthRestService, AuthRestService>();
             builder.Services.AddScoped<ITokenProvider, TokenProvider>();
-            builder.Services.AddScoped<IPrductRestService, PrductRestService>();
-            builder.Services.AddScoped<ICartService, CartService>();
+            builder.Services.AddScoped<IPrductRestService, PrductRestService>(); 
+			builder.Services.AddScoped<ICartRestService, CartRestService>();
+            builder.Services.AddScoped<IOrderRestService, OrderRestService>();
 
 
-            #region  auth and authori using cookie
-            // auth and authori using cookie
-            builder.Services.AddHttpContextAccessor();
+
+			#region  auth and authori using cookie
+			// auth and authori using cookie
+			builder.Services.AddHttpContextAccessor();
             builder.Services.AddHttpClient();
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme) //add cookies for authentication for client
             .AddCookie(options =>

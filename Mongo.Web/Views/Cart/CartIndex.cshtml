@@ -1,9 +1,9 @@
 ﻿@using Mongo.Model.Cart.Dto
 @model CartDto
 
+
 @if (Model.cartHeader != null && Model.cartDetails?.Count() > 0)
 {
-
     <form method="post" asp-action="EmailCart">
         <br />
         <input type="hidden" asp-for="@Model.cartHeader.CartHeaderId" />
@@ -92,7 +92,7 @@
                         <button type="submit" class="btn btn-outline-danger form-control">Email Cart</button>
                     </div>
                     <div class="col-6 col-md-3 offset-md-6">
-                        <button disabled class="btn btn-success form-control " value="Checkout"> Comming Soon!"</button>
+                        <a asp-action="CheckOut" class="btn btn-success form-control">Looks Good? </a>
                     </div>
                 </div>
             </div>

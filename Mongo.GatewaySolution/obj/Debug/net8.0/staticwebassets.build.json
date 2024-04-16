@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "34vXQYwVbKQpfMiy8IqT+pVUeX5feo2CsAymjyGbO0o=",
+  "Source": "Mongo.GatewaySolution",
+  "BasePath": "_content/Mongo.GatewaySolution",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
